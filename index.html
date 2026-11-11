@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8f2" />
+  <title>Untuk Marlina — Sebuah Kejutan Kecil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <main>
+    <section id="intro" class="intro">
+      <div class="intro-glow"></div>
+      <p class="eyebrow">Ada sesuatu yang istimewa...</p>
+      <h1>Untuk <span>Marlina</span></h1>
+      <p class="intro-copy">Sebelum membuka hari ini,<br />tarik napas perlahan.</p>
+      <button id="openGift" class="gift-button" type="button">
+        <span class="gift-icon">🎁</span>
+        <span>Buka Kejutan</span>
+      </button>
+    </section>
+
+    <section id="celebration" class="celebration" aria-hidden="true">
+      <div class="moon"></div>
+      <div class="soft-orb orb-one"></div>
+      <div class="soft-orb orb-two"></div>
+
+      <div class="hero-copy">
+        <p class="date-line">HARI INI ADALAH HARI YANG CANTIK</p>
+        <h2>Selamat Ulang Tahun Sayang,<br /><em>Marlina</em></h2>
+        <p class="wish">Semoga setiap langkahmu dipenuhi kehangatan,<br />keberanian, dan kebahagiaan yang tak pernah selesai.</p>
+      </div>
+
+      <div class="cake-wrap">
+        <div class="candles" id="candles" aria-label="Lilin ulang tahun">
+          <div class="candle"><i></i><b></b><span></span></div>
+          <div class="candle"><i></i><b></b><span></span></div>
+          <div class="candle"><i></i><b></b><span></span></div>
+        </div>
+        <div class="cake"><div class="icing"></div><div class="cake-body"></div></div>
+        <p id="candleHint" class="candle-hint">Buang lilin, Marlina</p>
+        <button id="blowButton" class="wish-button" type="button">Tiup Lilin Sayang✦</button>
+      </div>
+
+      <article id="letter" class="letter">
+        <div class="letter-mark">“</div>
+        <p>Dunia terasa lebih hangat sejak ada seseorang seistimewa dirimu di dalamnya.</p>
+        <p>Semoga tahun baru kehidupanmu membawa cerita yang membuatmu tersenyum saat mengenangnya nanti.</p>
+        <div class="signature">Dengan sepenuh hati,<br /><strong>Ari 😍</strong></div>
+      </article>
+
+      <button id="secretButton" class="secret-button" type="button">Ada pesan kecil lagi <span>↗</span></button>
+      <div id="secret" class="secret" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="secret-card">
+          <button class="close-secret" type="button" aria-label="Tutup">×</button>
+          <p class="secret-kicker">PESAN UNTUKMU</p>
+          <h3>Terima kasih sudah lahir<br />dan menjadi dirimu sendiri.</h3>
+          <p>Jangan lupa merayakan dirimu hari ini—karena kamu layak dicintai dengan cara yang lembut.</p>
+          <p>Maaf abi cuma bisa ngasih hadiah seperti ini yang jauh dari kata efort sebagai mana orang lain berikan.</p>
+          <span class="secret-heart">♡</span>
+        </div>
+      </div>
+
+      <button id="musicToggle" class="music-toggle" type="button" aria-label="Hidupkan musik" aria-pressed="false">
+        <span class="music-icon">♪</span>
+        <span class="music-label">Musik</span>
+      </button>
+    </section>
+  </main>
+
+  <audio id="bgMusic" preload="auto" loop></audio>
+  <input id="musicFileInput" type="file" accept="audio/*,.mp3,.m4a,.aac,.wav" hidden />
+
+  <script src="script.js"></script>
+</body>
+</html>
